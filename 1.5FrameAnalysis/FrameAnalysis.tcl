@@ -65,7 +65,7 @@ mass 2 1.0e4 0.0 0.0;#节点2施加x方向的质量，y方向和旋转向的质�
 mass 3 1.0e4 0.0 0.0
 loadConst -time 0.0
 timeSeries Path 1 -dt 0.02 -filePath tabas.txt -factor 9.8
-pattern UniformExcitation 2 1 -accel 1;#定义荷载形式为基底一致激励 
+pattern UniformExcitation 2 1 -accel 1;#定义荷载形式为基底一致激励，序列号为2，加载方向为x方向，加载方式为加速度 
 
 # 此段内容为根据阻尼比确定Rayleigh阻尼的系数a0和a1
 set temp [eigen 1]  ;#求解模型的一个特征值，返回的是一个包含特征值的字符串
